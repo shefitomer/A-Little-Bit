@@ -79,16 +79,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 248074635734844630, guid: 1250de8b48bc4074ead762b1d2398049,
         type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 248074635734844630, guid: 1250de8b48bc4074ead762b1d2398049,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 248074635734844630, guid: 1250de8b48bc4074ead762b1d2398049,
-        type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}

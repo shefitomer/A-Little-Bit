@@ -7,13 +7,14 @@ public class Machines : MonoBehaviour
 
     List<Machine> AllMachines;
 
-    public GameObject BasicBlockPrefab;
+    public GameObject BreadboardBlockPrefab;
+    public GameObject MenuUI;
 
     // Start is called before the first frame update
     void Start()
     {
         AllMachines = new List<Machine>();
-        AllMachines.Add(new Breadboard(BasicBlockPrefab, new Vector2(3f, 1.5f)));
+        AllMachines.Add(new Breadboard(BreadboardBlockPrefab, new Vector2(3f, 1.5f), MenuUI));
     }
 
     public Machine GetMachineCollding(Vector2 position)

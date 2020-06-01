@@ -5,6 +5,9 @@ using UnityEngine;
 public class Breadboard : Machine
 {
     public static Breadboard instance;
+    public GameObject MenuGO;
+
+    private GameObject menu;
 
     void Awake()
     {
@@ -16,13 +19,15 @@ public class Breadboard : Machine
         instance = this;
     }
 
-    public Breadboard(GameObject prefab, Vector2 position) : base("Breadboard", prefab, position)
+    public Breadboard(GameObject prefab, Vector2 position, GameObject MenuUI) : base("Breadboard", prefab, position)
     {
-
+        this.menu = MenuUI;
     }
 
     override public void open()
     {
         Debug.Log("Main Open");
+        GO = (GameObject)GameObject.Instantiate(menu);
+        GO.AddComponent<BoxCollider2D>();
     }
 }
